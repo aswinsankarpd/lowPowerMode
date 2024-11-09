@@ -1,0 +1,3 @@
+../Interface/DebugUart/debugUart.c:12:6:debugUartInit	1
+../Interface/DebugUart/debugUart.c:20:6:debugRxCallback	1
+../Interface/DebugUart/debugUart.c:26:6:debugTxCallback	1

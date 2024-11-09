@@ -1,0 +1,4 @@
+../HAL/UART/uart.c:14:6:HAL_UART_RxCpltCallback	1
+../HAL/UART/uart.c:21:6:HAL_UART_TxCpltCallback	1
+../HAL/UART/uart.c:26:6:uartInit	1
+../HAL/UART/uart.c:31:6:receptionItrOn	1

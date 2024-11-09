@@ -1,0 +1,3 @@
+../Interface/circularBuffer/circularBuffer.c:13:16:circularBufferInit	24	static
+../Interface/circularBuffer/circularBuffer.c:33:16:circularBufferEnqueue	24	static
+../Interface/circularBuffer/circularBuffer.c:61:16:circularBufferDequeue	24	static

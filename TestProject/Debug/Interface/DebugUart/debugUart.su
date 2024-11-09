@@ -1,0 +1,3 @@
+../Interface/DebugUart/debugUart.c:12:6:debugUartInit	16	static
+../Interface/DebugUart/debugUart.c:20:6:debugRxCallback	8	static
+../Interface/DebugUart/debugUart.c:26:6:debugTxCallback	4	static
