@@ -22,9 +22,7 @@ void debugRxCallback(void)
 	{
 		commandReceivedFlag = 1;
 	}
-
 	circularBufferEnqueue(rxBuffer, (void * )&data);
-
 	receptionItrOn(&data);
 
 }
