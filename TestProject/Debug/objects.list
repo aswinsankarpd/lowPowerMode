@@ -1,3 +1,4 @@
+"./Application/DebugCLI/debugCLI.o"
 "./Application/SysInit/sysInit.o"
 "./Core/Src/dma.o"
 "./Core/Src/eth.o"

@@ -9,6 +9,7 @@
 #define DEBUGUART_DEBUGUART_H_
 
 #include "usart.h"
+#include "circularBuffer.h"
 
 void debugUartInit(void);
 
@@ -21,5 +22,7 @@ uint8_t getCmdReceivedFlag(void);
 void debugPrint(void);
 
 void setCmdReceivedFlag(uint8_t value);
+
+sCircularBuffer_t * getRxBuffer(void);
 
 #endif /* DEBUGUART_DEBUGUART_H_ */

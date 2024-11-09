@@ -16,6 +16,7 @@ RM := rm -rf
 -include Core/Startup/subdir.mk
 -include Core/Src/subdir.mk
 -include Application/SysInit/subdir.mk
+-include Application/DebugCLI/subdir.mk
 -include objects.mk
 
 ifneq ($(MAKECMDGOALS),clean)

@@ -14,6 +14,8 @@ sCircularBuffer_t * rxBuffer = NULL;
 
 uint8_t commandReceivedFlag = 0;
 
+uint16_t commandReceivedHead = 0;
+
 void debugRxCallback(void)
 {
 	if(data == 0x0D)
@@ -64,4 +66,9 @@ uint8_t getCmdReceivedFlag(void)
 void setCmdReceivedFlag(uint8_t value)
 {
 	commandReceivedFlag = value;
+}
+
+sCircularBuffer_t * getRxBuffer(void)
+{
+	return rxBuffer;
 }
