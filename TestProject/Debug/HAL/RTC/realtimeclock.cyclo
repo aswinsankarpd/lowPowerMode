@@ -1,0 +1,3 @@
+../HAL/RTC/realtimeclock.c:21:6:RTCInit	2
+../HAL/RTC/realtimeclock.c:30:6:setRTCData	3
+../HAL/RTC/realtimeclock.c:55:6:getRTCData	1

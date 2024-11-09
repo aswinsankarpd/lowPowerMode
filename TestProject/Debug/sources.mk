@@ -27,6 +27,7 @@ Application/SysInit \
 Core/Src \
 Core/Startup \
 Drivers/STM32H7xx_HAL_Driver/Src \
+HAL/RTC \
 HAL/UART \
 Interface/DebugUart \
 Interface/circularBuffer \

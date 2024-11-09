@@ -8,10 +8,13 @@
 #include "debugUart.h"
 #include "circularBuffer.h"
 #include "commonDefines.h"
+#include "realtimeclock.h"
 
-typedef void(*commandFptr)(char * args, char *response);
+typedef void(*commandFptr)(char ** args, char *response);
 
-static void sampleGetFunction(char * args, char *response);
+static void getDateTime(char ** args, char *response);
+
+static void setTime(char ** args, char *response);
 
 typedef struct
 {
@@ -23,14 +26,19 @@ typedef struct
 // Command tables
 sCommandStruct_t getCommandtable[] =
 {
-    {"sample", 	NULL, 	sampleGetFunction},
-    {NULL, 		NULL, 	NULL}
+    {"dateTime", 	NULL, 	getDateTime},
+    {NULL, 			NULL, 	NULL}
 };
 
+sCommandStruct_t setCommandtable[] =
+{
+    {"dateTime", 	NULL, 	setTime},
+    {NULL, 			NULL, 	NULL}
+};
 sCommandStruct_t mainCommandTable[] =
 {
     {"get", 	getCommandtable, 	NULL},
-    {"set", 	getCommandtable, 	NULL},
+    {"set", 	setCommandtable, 	NULL},
     {NULL, 		NULL, 				NULL}
 };
 
@@ -127,7 +135,40 @@ static void processCommand(void)
 }
 
 
-static void sampleGetFunction(char * args, char *response)
+static void getDateTime(char ** args, char *response)
 {
-    HAL_UART_Transmit(&huart3, (uint8_t *)"get Cmd OK", 10, 100);
+	sDateTimeConfig_t dateTime = {0};
+
+	getRTCData(&dateTime);
+
+	uint16_t length = snprintf(response, 512, "Time: %02u:%02u:%02u\r\n", dateTime.hours, dateTime.mins, dateTime.secs);
+
+	HAL_UART_Transmit(&huart3, response, length, 100);
+}
+
+static void setTime(char ** args, char *response)
+{
+    uint8_t dateTimeArray[3] = {0};
+    uint8_t tokenIdx = 0;
+    sDateTimeConfig_t dateTime = {0};
+
+    char *token = strtok(args[2], ",");
+
+
+    while (token != NULL && tokenIdx < 3)
+    {
+        dateTimeArray[tokenIdx] = (uint8_t)atoi(token);
+        tokenIdx++;
+        token = strtok(NULL, ",");
+    }
+
+    dateTime.hours = dateTimeArray[0];
+    dateTime.mins = dateTimeArray[1];
+    dateTime.secs = dateTimeArray[2];
+
+    setRTCData(&dateTime);
+
+    uint16_t length = snprintf(response, 512, "Time is Set\r\n");
+
+	HAL_UART_Transmit(&huart3, response, length, 100);
 }
