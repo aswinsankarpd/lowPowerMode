@@ -1,3 +1,6 @@
-../Interface/DebugUart/debugUart.c:12:6:debugUartInit	1
-../Interface/DebugUart/debugUart.c:20:6:debugRxCallback	1
-../Interface/DebugUart/debugUart.c:26:6:debugTxCallback	1
+../Interface/DebugUart/debugUart.c:17:6:debugRxCallback	2
+../Interface/DebugUart/debugUart.c:30:6:debugTxCallback	1
+../Interface/DebugUart/debugUart.c:35:6:debugUartInit	1
+../Interface/DebugUart/debugUart.c:48:6:debugPrint	2
+../Interface/DebugUart/debugUart.c:59:9:getCmdReceivedFlag	1
+../Interface/DebugUart/debugUart.c:64:6:setCmdReceivedFlag	1

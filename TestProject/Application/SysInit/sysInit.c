@@ -9,6 +9,7 @@
 #include "sysInit.h"
 #include "commonDefines.h"
 #include "usart.h"
+#include "debugUart.h"
 
 uint8_t receptionData = 0;
 

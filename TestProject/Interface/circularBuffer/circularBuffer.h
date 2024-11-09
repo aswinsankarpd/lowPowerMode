@@ -33,9 +33,9 @@ typedef enum
 
 eCbuffStatus_t circularBufferInit(sCircularBuffer_t * cBuff, uint16_t maxCapacity, uint16_t dataSize);
 
-eCbuffStatus_t circularBufferEqnueue(sCircularBuffer_t * cBuff, void * value);
+eCbuffStatus_t circularBufferEnqueue(sCircularBuffer_t * cBuff, void * value);
 
-eCbuffStatus_t circularBufferDeqnueue(sCircularBuffer_t * cBuff, void * value);
+eCbuffStatus_t circularBufferDequeue(sCircularBuffer_t * cBuff, void * value);
 
 
 #endif /* CIRCULARBUFFER_CIRCULARBUFFER_H_ */

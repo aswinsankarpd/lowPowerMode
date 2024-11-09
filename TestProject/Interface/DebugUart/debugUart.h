@@ -16,4 +16,10 @@ void debugRxCallback(void);
 
 void debugTxCallback(void);
 
+uint8_t getCmdReceivedFlag(void);
+
+void debugPrint(void);
+
+void setCmdReceivedFlag(uint8_t value);
+
 #endif /* DEBUGUART_DEBUGUART_H_ */

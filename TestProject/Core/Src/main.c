@@ -24,10 +24,11 @@
 #include "usart.h"
 #include "usb_otg.h"
 #include "gpio.h"
-
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 #include "sysInit.h"
+#include "debugUart.h"
+#include "commonDefines.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -104,7 +105,11 @@ int main(void)
   while (1)
   {
     /* USER CODE END WHILE */
-
+	  if(1 == getCmdReceivedFlag())
+	  {
+		  debugPrint();
+		  setCmdReceivedFlag(0);
+	  }
     /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */
