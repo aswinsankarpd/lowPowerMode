@@ -28,6 +28,7 @@ Core/Src \
 Core/Startup \
 Drivers/STM32H7xx_HAL_Driver/Src \
 HAL/GpioInt \
+HAL/LowPowerMode \
 HAL/RTC \
 HAL/UART \
 Interface/DebugUart \

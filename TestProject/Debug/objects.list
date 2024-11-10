@@ -39,6 +39,7 @@
 "./Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart.o"
 "./Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart_ex.o"
 "./HAL/GpioInt/gpioInt.o"
+"./HAL/LowPowerMode/lowPowerMode.o"
 "./HAL/RTC/realtimeclock.o"
 "./HAL/UART/uart.o"
 "./Interface/DebugUart/debugUart.o"

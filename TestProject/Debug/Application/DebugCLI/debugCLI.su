@@ -1,5 +1,6 @@
-../Application/DebugCLI/debugCLI.c:53:6:debugCLITask	16	static
-../Application/DebugCLI/debugCLI.c:67:13:parseCommand	16	static
-../Application/DebugCLI/debugCLI.c:90:13:processCommand	32	static
-../Application/DebugCLI/debugCLI.c:138:13:getDateTime	40	static
-../Application/DebugCLI/debugCLI.c:149:13:setTime	40	static
+../Application/DebugCLI/debugCLI.c:56:6:debugCLITask	16	static
+../Application/DebugCLI/debugCLI.c:70:13:parseCommand	16	static
+../Application/DebugCLI/debugCLI.c:89:13:processCommand	32	static
+../Application/DebugCLI/debugCLI.c:139:13:getDateTime	40	static
+../Application/DebugCLI/debugCLI.c:150:13:setTime	40	static
+../Application/DebugCLI/debugCLI.c:177:13:setSleep	24	static

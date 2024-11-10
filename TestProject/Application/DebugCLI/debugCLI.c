@@ -16,6 +16,8 @@ static void getDateTime(char ** args, char *response);
 
 static void setTime(char ** args, char *response);
 
+static void setSleep(char ** args, char *response);
+
 typedef struct
 {
     char * command;
@@ -32,8 +34,9 @@ sCommandStruct_t getCommandtable[] =
 
 sCommandStruct_t setCommandtable[] =
 {
-    {"dateTime", 	NULL, 	setTime},
-    {NULL, 			NULL, 	NULL}
+	{"dateTime", 		NULL, 	setTime},
+	{"sleep", 			NULL, 	setSleep},
+    {NULL, 				NULL, 	NULL}
 };
 sCommandStruct_t mainCommandTable[] =
 {
@@ -69,12 +72,8 @@ static void parseCommand(void)
     uint16_t pData = 0;
     uint16_t cmdIdx = 0;
 
-    // Dequeue data from circular buffer until end of command (0x0D) is detected
     while(E_CBUFF_DEQUEUE_OK == circularBufferDequeue(getRxBuffer(), (void *)&pData))
     {
-
-
-        // Reset index if end of command is detected
         if(pData == 0x0D)
         {
             cmdIdx = 0;
@@ -93,6 +92,8 @@ static void processCommand(void)
     sCommandStruct_t *commandStruct = mainCommandTable;
     uint8_t cmdIdx = 0;
     bool cmdSucessFlag = false;
+
+    memset(args,0,10);
 
     args[argIndex] = strtok((char *)commandBuffer, " ");
     while (args[argIndex] != NULL)
@@ -169,6 +170,15 @@ static void setTime(char ** args, char *response)
     setRTCData(&dateTime);
 
     uint16_t length = snprintf(response, 512, "Time is Set\r\n");
+
+	HAL_UART_Transmit(&huart3, response, length, 100);
+}
+
+static void setSleep(char ** args, char *response)
+{
+	startLowPowerMode();
+
+    uint16_t length = snprintf(response, 512, "Device entered low power mode\r\n");
 
 	HAL_UART_Transmit(&huart3, response, length, 100);
 }
