@@ -13,6 +13,7 @@ RM := rm -rf
 -include Interface/DebugUart/subdir.mk
 -include HAL/UART/subdir.mk
 -include HAL/RTC/subdir.mk
+-include HAL/GpioInt/subdir.mk
 -include Drivers/STM32H7xx_HAL_Driver/Src/subdir.mk
 -include Core/Startup/subdir.mk
 -include Core/Src/subdir.mk
