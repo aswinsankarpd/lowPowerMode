@@ -1,3 +1,4 @@
-../HAL/LowPowerMode/lowPowerMode.c:11:6:startLowPowerMode	1
-../HAL/LowPowerMode/lowPowerMode.c:21:6:HAL_SuspendTick	1
-../HAL/LowPowerMode/lowPowerMode.c:26:6:HAL_ResumeTick	1
+../HAL/LowPowerMode/lowPowerMode.c:13:6:lowPowerModeTask	2
+../HAL/LowPowerMode/lowPowerMode.c:34:6:startLowPowerMode	1
+../HAL/LowPowerMode/lowPowerMode.c:45:6:HAL_SuspendTick	1
+../HAL/LowPowerMode/lowPowerMode.c:50:6:HAL_ResumeTick	1

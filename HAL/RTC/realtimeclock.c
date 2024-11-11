@@ -7,6 +7,7 @@
 
 #include "realtimeclock.h"
 #include "usart.h"
+#include "lowPowerMode.h"
 
 sDateTimeConfig_t defaultDateTime = {
 		.date 	= 26,
@@ -22,20 +23,15 @@ static uint8_t is_leap_year(uint8_t year);
 
 static uint8_t days_in_month(uint8_t month, uint8_t year);
 
+bool rtcAlarmTriggered = false;
 
 void HAL_RTC_AlarmAEventCallback(RTC_HandleTypeDef *hrtc)
 {
+	HAL_ResumeTick();
+
 	HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_0);
 
-	sDateTimeConfig_t dt = {0};
-
-	getRTCData(&dt);
-
-	add_time(&dt, 0, 0, 5);
-
-	setRTCAlarm(&dt);
-
-//	startLowPowerMode();
+	rtcAlarmTriggered = true;
 }
 
 void RTCInit(void)
@@ -155,3 +151,12 @@ void add_time(sDateTimeConfig_t *dt, uint8_t add_hours, uint8_t add_minutes, uin
     }
 }
 
+bool getRtcAlarmStatus(void)
+{
+	return rtcAlarmTriggered;
+}
+
+void setRtcAlarmStatus(bool flag)
+{
+	rtcAlarmTriggered = flag;
+}

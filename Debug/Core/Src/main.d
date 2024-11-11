@@ -35,7 +35,8 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
  ../Core/Inc/rtc.h ../Core/Inc/usart.h ../Core/Inc/gpio.h \
  D:/Tismo_Projects/Experiments/LowPowerMode/lowPowerMode/Application/SysInit/sysInit.h \
  D:/Tismo_Projects/Experiments/LowPowerMode/lowPowerMode/Application/DebugCLI/debugCLI.h \
- D:/Tismo_Projects/Experiments/LowPowerMode/lowPowerMode/Interface/commonDefines.h
+ D:/Tismo_Projects/Experiments/LowPowerMode/lowPowerMode/Interface/commonDefines.h \
+ D:/Tismo_Projects/Experiments/LowPowerMode/lowPowerMode/HAL/LowPowerMode/lowPowerMode.h
 ../Core/Inc/main.h:
 ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:
 ../Core/Inc/stm32h7xx_hal_conf.h:
@@ -78,3 +79,4 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
 D:/Tismo_Projects/Experiments/LowPowerMode/lowPowerMode/Application/SysInit/sysInit.h:
 D:/Tismo_Projects/Experiments/LowPowerMode/lowPowerMode/Application/DebugCLI/debugCLI.h:
 D:/Tismo_Projects/Experiments/LowPowerMode/lowPowerMode/Interface/commonDefines.h:
+D:/Tismo_Projects/Experiments/LowPowerMode/lowPowerMode/HAL/LowPowerMode/lowPowerMode.h:

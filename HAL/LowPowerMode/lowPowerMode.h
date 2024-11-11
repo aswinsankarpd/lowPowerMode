@@ -10,6 +10,8 @@
 
 #include "stm32h7xx_hal.h"
 
+void lowPowerModeTask(void);
+
 void startLowPowerMode(void);
 
 void HAL_SuspendTick(void);

@@ -28,6 +28,7 @@
 /* USER CODE BEGIN Includes */
 #include "sysInit.h"
 #include "debugCLI.h"
+#include "lowPowerMode.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -106,6 +107,8 @@ int main(void)
 
     /* USER CODE BEGIN 3 */
 	  debugCLITask();
+
+	  lowPowerModeTask();
   }
   /* USER CODE END 3 */
 }
