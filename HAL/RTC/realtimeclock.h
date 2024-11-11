@@ -31,4 +31,6 @@ void setRTCData(sDateTimeConfig_t * rtcDatTime);
 
 void getRTCData(sDateTimeConfig_t * rtcDatTime);
 
+void add_time(sDateTimeConfig_t *dt, uint8_t add_hours, uint8_t add_minutes, uint8_t add_seconds);
+
 #endif /* RTC_REALTIMECLOCK_H_ */

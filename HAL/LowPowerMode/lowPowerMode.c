@@ -6,11 +6,13 @@
  */
 #include "lowPowerMode.h"
 #include "uart.h"
-
+#include "realtimeclock.h"
 
 void startLowPowerMode(void)
 {
     HAL_SuspendTick();
+
+    HAL_PWREx_ClearPendingEvent();
 
     HAL_PWR_EnterSLEEPMode(PWR_MAINREGULATOR_ON,PWR_SLEEPENTRY_WFI);
 }

@@ -18,9 +18,14 @@ sDateTimeConfig_t defaultDateTime = {
 		.secs	= 21
 };
 
+static uint8_t is_leap_year(uint8_t year);
+
+static uint8_t days_in_month(uint8_t month, uint8_t year);
+
+
 void HAL_RTC_AlarmAEventCallback(RTC_HandleTypeDef *hrtc)
 {
-  HAL_GPIO_WritePin (GPIOB, GPIO_PIN_0, 1);
+	HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_0);
 }
 
 void RTCInit(void)
@@ -95,5 +100,48 @@ void setRTCAlarm(sDateTimeConfig_t * rtcDatTime)
 	{
 		Error_Handler();
 	}
+}
+
+static uint8_t is_leap_year(uint8_t year) {
+    return (year % 4 == 0 && year % 100 != 0) || (year % 400 == 0);
+}
+
+static uint8_t days_in_month(uint8_t month, uint8_t year) {
+    int days[] = { 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
+    if (month == 2 && is_leap_year(year)) {
+        return 29;
+    }
+    return days[month - 1];
+}
+
+void add_time(sDateTimeConfig_t *dt, uint8_t add_hours, uint8_t add_minutes, uint8_t add_seconds) {
+    dt->secs += add_seconds;
+    if (dt->secs >= 60) {
+        add_minutes += dt->secs / 60;
+        dt->secs %= 60;
+    }
+
+    dt->mins += add_minutes;
+    if (dt->mins >= 60) {
+        add_hours += dt->mins / 60;
+        dt->mins %= 60;
+    }
+
+    dt->hours += add_hours;
+    if (dt->hours >= 24) {
+        dt->date += dt->hours / 24;
+        dt->hours %= 24;
+    }
+
+    uint8_t full_year = 2000 + dt->year;
+    while (dt->date > days_in_month(dt->month, full_year)) {
+        dt->date -= days_in_month(dt->month, full_year);
+        dt->month++;
+        if (dt->month > 12) {
+            dt->month = 1;
+            dt->year++;
+            full_year = 2000 + dt->year;
+        }
+    }
 }
 
