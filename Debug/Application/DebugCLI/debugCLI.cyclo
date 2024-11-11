@@ -1,6 +1,8 @@
-../Application/DebugCLI/debugCLI.c:62:6:debugCLITask	2
-../Application/DebugCLI/debugCLI.c:81:13:parseCommand	3
-../Application/DebugCLI/debugCLI.c:100:13:processCommand	7
-../Application/DebugCLI/debugCLI.c:149:13:getDateTime	1
-../Application/DebugCLI/debugCLI.c:160:13:setTime	3
-../Application/DebugCLI/debugCLI.c:187:13:setCSleep	1
+../Application/DebugCLI/debugCLI.c:68:6:debugCLITask	2
+../Application/DebugCLI/debugCLI.c:87:13:parseCommand	3
+../Application/DebugCLI/debugCLI.c:106:13:processCommand	7
+../Application/DebugCLI/debugCLI.c:155:13:getDateTime	1
+../Application/DebugCLI/debugCLI.c:166:13:setDateTime	5
+../Application/DebugCLI/debugCLI.c:210:13:setRtcAlarm	5
+../Application/DebugCLI/debugCLI.c:253:13:setCSleep	1
+../Application/DebugCLI/debugCLI.c:262:13:setGreenLed	3

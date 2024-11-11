@@ -32,7 +32,7 @@ HAL/LowPowerMode/lowPowerMode.o: ../HAL/LowPowerMode/lowPowerMode.c \
  ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rtc_ex.h \
  ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h \
  ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart_ex.h \
- D:/Tismo_Projects/Experiments/Low\ Power\ Mode\ -\ Office/HAL/UART/uart.h \
+ D:/Tismo_Projects/Experiments/LowPowerMode/lowPowerMode/HAL/UART/uart.h \
  ../Core/Inc/usart.h ../Core/Inc/main.h
 ../HAL/LowPowerMode/lowPowerMode.h:
 ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:
@@ -67,6 +67,6 @@ HAL/LowPowerMode/lowPowerMode.o: ../HAL/LowPowerMode/lowPowerMode.c \
 ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rtc_ex.h:
 ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:
 ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart_ex.h:
-D:/Tismo_Projects/Experiments/Low\ Power\ Mode\ -\ Office/HAL/UART/uart.h:
+D:/Tismo_Projects/Experiments/LowPowerMode/lowPowerMode/HAL/UART/uart.h:
 ../Core/Inc/usart.h:
 ../Core/Inc/main.h:

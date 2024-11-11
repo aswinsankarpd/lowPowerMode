@@ -23,6 +23,10 @@ typedef struct
 	uint8_t year;
 }sDateTimeConfig_t;
 
+void HAL_RTC_AlarmAEventCallback(RTC_HandleTypeDef *hrtc);
+
+void RTCInit(void);
+
 void setRTCData(sDateTimeConfig_t * rtcDatTime);
 
 void getRTCData(sDateTimeConfig_t * rtcDatTime);

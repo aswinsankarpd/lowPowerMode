@@ -19,5 +19,7 @@ void systemInit(void)
 
 	RTCInit();
 
+	HAL_GPIO_WritePin (GPIOB, GPIO_PIN_0, 0);
+
 	HAL_UART_Transmit_IT(&huart3, "System Started\r\n", 16);
 }

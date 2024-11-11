@@ -1,3 +1,5 @@
-../HAL/RTC/realtimeclock.c:21:6:RTCInit	2
-../HAL/RTC/realtimeclock.c:30:6:setRTCData	3
-../HAL/RTC/realtimeclock.c:55:6:getRTCData	1
+../HAL/RTC/realtimeclock.c:21:6:HAL_RTC_AlarmAEventCallback	1
+../HAL/RTC/realtimeclock.c:26:6:RTCInit	2
+../HAL/RTC/realtimeclock.c:35:6:setRTCData	3
+../HAL/RTC/realtimeclock.c:59:6:getRTCData	1
+../HAL/RTC/realtimeclock.c:79:6:setRTCAlarm	2

@@ -32,9 +32,9 @@ Interface/DebugUart/debugUart.o: ../Interface/DebugUart/debugUart.c \
  ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rtc_ex.h \
  ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h \
  ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart_ex.h \
- D:/Tismo_Projects/Experiments/Low\ Power\ Mode\ -\ Office/Interface/circularBuffer/circularBuffer.h \
- D:/Tismo_Projects/Experiments/Low\ Power\ Mode\ -\ Office/Interface/commonDefines.h \
- D:/Tismo_Projects/Experiments/Low\ Power\ Mode\ -\ Office/HAL/UART/uart.h
+ D:/Tismo_Projects/Experiments/LowPowerMode/lowPowerMode/Interface/circularBuffer/circularBuffer.h \
+ D:/Tismo_Projects/Experiments/LowPowerMode/lowPowerMode/Interface/commonDefines.h \
+ D:/Tismo_Projects/Experiments/LowPowerMode/lowPowerMode/HAL/UART/uart.h
 ../Interface/DebugUart/debugUart.h:
 ../Core/Inc/usart.h:
 ../Core/Inc/main.h:
@@ -70,6 +70,6 @@ Interface/DebugUart/debugUart.o: ../Interface/DebugUart/debugUart.c \
 ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rtc_ex.h:
 ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:
 ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart_ex.h:
-D:/Tismo_Projects/Experiments/Low\ Power\ Mode\ -\ Office/Interface/circularBuffer/circularBuffer.h:
-D:/Tismo_Projects/Experiments/Low\ Power\ Mode\ -\ Office/Interface/commonDefines.h:
-D:/Tismo_Projects/Experiments/Low\ Power\ Mode\ -\ Office/HAL/UART/uart.h:
+D:/Tismo_Projects/Experiments/LowPowerMode/lowPowerMode/Interface/circularBuffer/circularBuffer.h:
+D:/Tismo_Projects/Experiments/LowPowerMode/lowPowerMode/Interface/commonDefines.h:
+D:/Tismo_Projects/Experiments/LowPowerMode/lowPowerMode/HAL/UART/uart.h:

@@ -1,7 +1,7 @@
 Application/DebugCLI/debugCLI.o: ../Application/DebugCLI/debugCLI.c \
  ../Application/DebugCLI/debugCLI.h \
- D:/Tismo_Projects/Experiments/Low\ Power\ Mode\ -\ Office/Interface/commonDefines.h \
- D:/Tismo_Projects/Experiments/Low\ Power\ Mode\ -\ Office/Interface/DebugUart/debugUart.h \
+ D:/Tismo_Projects/Experiments/LowPowerMode/lowPowerMode/Interface/commonDefines.h \
+ D:/Tismo_Projects/Experiments/LowPowerMode/lowPowerMode/Interface/DebugUart/debugUart.h \
  ../Core/Inc/usart.h ../Core/Inc/main.h \
  ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h \
  ../Core/Inc/stm32h7xx_hal_conf.h \
@@ -35,13 +35,13 @@ Application/DebugCLI/debugCLI.o: ../Application/DebugCLI/debugCLI.c \
  ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rtc_ex.h \
  ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h \
  ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart_ex.h \
- D:/Tismo_Projects/Experiments/Low\ Power\ Mode\ -\ Office/Interface/circularBuffer/circularBuffer.h \
- D:/Tismo_Projects/Experiments/Low\ Power\ Mode\ -\ Office/HAL/RTC/realtimeclock.h \
- D:/Tismo_Projects/Experiments/Low\ Power\ Mode\ -\ Office/HAL/RTC/realtimeclock.h \
+ D:/Tismo_Projects/Experiments/LowPowerMode/lowPowerMode/Interface/circularBuffer/circularBuffer.h \
+ D:/Tismo_Projects/Experiments/LowPowerMode/lowPowerMode/HAL/RTC/realtimeclock.h \
+ D:/Tismo_Projects/Experiments/LowPowerMode/lowPowerMode/HAL/RTC/realtimeclock.h \
  ../Core/Inc/rtc.h
 ../Application/DebugCLI/debugCLI.h:
-D:/Tismo_Projects/Experiments/Low\ Power\ Mode\ -\ Office/Interface/commonDefines.h:
-D:/Tismo_Projects/Experiments/Low\ Power\ Mode\ -\ Office/Interface/DebugUart/debugUart.h:
+D:/Tismo_Projects/Experiments/LowPowerMode/lowPowerMode/Interface/commonDefines.h:
+D:/Tismo_Projects/Experiments/LowPowerMode/lowPowerMode/Interface/DebugUart/debugUart.h:
 ../Core/Inc/usart.h:
 ../Core/Inc/main.h:
 ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:
@@ -76,7 +76,7 @@ D:/Tismo_Projects/Experiments/Low\ Power\ Mode\ -\ Office/Interface/DebugUart/de
 ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rtc_ex.h:
 ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:
 ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart_ex.h:
-D:/Tismo_Projects/Experiments/Low\ Power\ Mode\ -\ Office/Interface/circularBuffer/circularBuffer.h:
-D:/Tismo_Projects/Experiments/Low\ Power\ Mode\ -\ Office/HAL/RTC/realtimeclock.h:
-D:/Tismo_Projects/Experiments/Low\ Power\ Mode\ -\ Office/HAL/RTC/realtimeclock.h:
+D:/Tismo_Projects/Experiments/LowPowerMode/lowPowerMode/Interface/circularBuffer/circularBuffer.h:
+D:/Tismo_Projects/Experiments/LowPowerMode/lowPowerMode/HAL/RTC/realtimeclock.h:
+D:/Tismo_Projects/Experiments/LowPowerMode/lowPowerMode/HAL/RTC/realtimeclock.h:
 ../Core/Inc/rtc.h:

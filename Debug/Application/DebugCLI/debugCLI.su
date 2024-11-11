@@ -1,6 +1,8 @@
-../Application/DebugCLI/debugCLI.c:62:6:debugCLITask	16	static
-../Application/DebugCLI/debugCLI.c:81:13:parseCommand	16	static
-../Application/DebugCLI/debugCLI.c:100:13:processCommand	32	static
-../Application/DebugCLI/debugCLI.c:149:13:getDateTime	40	static
-../Application/DebugCLI/debugCLI.c:160:13:setTime	40	static
-../Application/DebugCLI/debugCLI.c:187:13:setCSleep	24	static
+../Application/DebugCLI/debugCLI.c:68:6:debugCLITask	16	static
+../Application/DebugCLI/debugCLI.c:87:13:parseCommand	16	static
+../Application/DebugCLI/debugCLI.c:106:13:processCommand	32	static
+../Application/DebugCLI/debugCLI.c:155:13:getDateTime	72	static
+../Application/DebugCLI/debugCLI.c:166:13:setDateTime	40	static
+../Application/DebugCLI/debugCLI.c:210:13:setRtcAlarm	40	static
+../Application/DebugCLI/debugCLI.c:253:13:setCSleep	24	static
+../Application/DebugCLI/debugCLI.c:262:13:setGreenLed	24	static

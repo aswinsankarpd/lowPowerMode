@@ -18,6 +18,11 @@ sDateTimeConfig_t defaultDateTime = {
 		.secs	= 21
 };
 
+void HAL_RTC_AlarmAEventCallback(RTC_HandleTypeDef *hrtc)
+{
+  HAL_GPIO_WritePin (GPIOB, GPIO_PIN_0, 1);
+}
+
 void RTCInit(void)
 {
 	if (HAL_RTCEx_BKUPRead(&hrtc, RTC_BKP_DR1) != 0x2346)
@@ -48,7 +53,6 @@ void setRTCData(sDateTimeConfig_t * rtcDatTime)
 	if ((HAL_RTC_SetTime(&hrtc, &sTime, RTC_FORMAT_BIN) == HAL_OK) && (HAL_RTC_SetDate(&hrtc, &sDate, RTC_FORMAT_BIN) == HAL_OK))
 	{
 		HAL_RTCEx_BKUPWrite(&hrtc, RTC_BKP_DR1, 0x2345);
-		HAL_UART_Transmit(&huart3, "RTC date Time Set\r\n", 18, 100);
 	}
 }
 
@@ -70,5 +74,26 @@ void getRTCData(sDateTimeConfig_t * rtcDatTime)
 	  rtcDatTime->hours = gTime.Hours;
 	  rtcDatTime->mins 	= gTime.Minutes;
 	  rtcDatTime->secs 	= gTime.Seconds;
+}
+
+void setRTCAlarm(sDateTimeConfig_t * rtcDatTime)
+{
+	RTC_AlarmTypeDef sAlarm = {0};
+	sAlarm.AlarmTime.Hours = rtcDatTime->hours;
+	sAlarm.AlarmTime.Minutes = rtcDatTime->mins;
+	sAlarm.AlarmTime.Seconds = rtcDatTime->secs;
+	sAlarm.AlarmTime.SubSeconds = 0;
+	sAlarm.AlarmTime.DayLightSaving = RTC_DAYLIGHTSAVING_NONE;
+	sAlarm.AlarmTime.StoreOperation = RTC_STOREOPERATION_RESET;
+	sAlarm.AlarmMask = RTC_ALARMMASK_NONE;
+	sAlarm.AlarmSubSecondMask = RTC_ALARMSUBSECONDMASK_ALL;
+	sAlarm.AlarmDateWeekDaySel = RTC_ALARMDATEWEEKDAYSEL_WEEKDAY;
+	sAlarm.AlarmDateWeekDay = rtcDatTime->day;
+	sAlarm.Alarm = RTC_ALARM_A;
+
+	if (HAL_RTC_SetAlarm_IT(&hrtc, &sAlarm, RTC_FORMAT_BIN) != HAL_OK)
+	{
+		Error_Handler();
+	}
 }
 
