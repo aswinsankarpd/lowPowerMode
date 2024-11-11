@@ -1,6 +1,6 @@
-../Application/DebugCLI/debugCLI.c:56:6:debugCLITask	2
-../Application/DebugCLI/debugCLI.c:75:13:parseCommand	3
-../Application/DebugCLI/debugCLI.c:94:13:processCommand	7
-../Application/DebugCLI/debugCLI.c:143:13:getDateTime	1
-../Application/DebugCLI/debugCLI.c:154:13:setTime	3
-../Application/DebugCLI/debugCLI.c:181:13:setSleep	1
+../Application/DebugCLI/debugCLI.c:62:6:debugCLITask	2
+../Application/DebugCLI/debugCLI.c:81:13:parseCommand	3
+../Application/DebugCLI/debugCLI.c:100:13:processCommand	7
+../Application/DebugCLI/debugCLI.c:149:13:getDateTime	1
+../Application/DebugCLI/debugCLI.c:160:13:setTime	3
+../Application/DebugCLI/debugCLI.c:187:13:setCSleep	1

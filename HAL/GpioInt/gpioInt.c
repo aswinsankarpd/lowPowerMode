@@ -16,11 +16,11 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
 {
 	HAL_ResumeTick();
 
-	HAL_UART_MspInit(&huart3);
+//	HAL_UART_MspInit(&huart3);
 
     uint16_t length = snprintf(rresponse, 512, "Device woken up\r\n");
 
 	HAL_UART_Transmit(&huart3, rresponse, length, 100);
 
-	HAL_NVIC_SystemReset();
+//	HAL_NVIC_SystemReset();
 }

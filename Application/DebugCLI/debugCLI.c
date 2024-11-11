@@ -16,7 +16,7 @@ static void getDateTime(char ** args, char *response);
 
 static void setTime(char ** args, char *response);
 
-static void setSleep(char ** args, char *response);
+static void setCSleep(char ** args, char *response);
 
 typedef struct
 {
@@ -34,9 +34,15 @@ sCommandStruct_t getCommandtable[] =
 
 sCommandStruct_t setCommandtable[] =
 {
-	{"dateTime", 		NULL, 	setTime},
-	{"sleep", 			NULL, 	setSleep},
-    {NULL, 				NULL, 	NULL}
+	{"dateTime", 		NULL, 	setTime			},
+	{"cSleep", 			NULL, 	setCSleep		},
+//	{"cStop", 			NULL, 	setCStop		},
+//	{"dStop", 			NULL, 	setDSStop		},
+//	{"stop", 			NULL, 	setStop			},
+//	{"dStandby", 		NULL, 	setDStandby		},
+//	{"standby", 		NULL, 	setStandby		},
+
+    {NULL, 				NULL, 	NULL			}
 };
 sCommandStruct_t mainCommandTable[] =
 {
@@ -178,9 +184,9 @@ static void setTime(char ** args, char *response)
 	HAL_UART_Transmit(&huart3, response, length, 100);
 }
 
-static void setSleep(char ** args, char *response)
+static void setCSleep(char ** args, char *response)
 {
-    uint16_t length = snprintf(response, 512, "Device entered low power mode\r\n");
+    uint16_t length = snprintf(response, 512, "Device entered cSleep mode\r\n");
 
 	HAL_UART_Transmit(&huart3, response, length, 100);
 

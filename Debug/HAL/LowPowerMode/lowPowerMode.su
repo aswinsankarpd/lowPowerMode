@@ -1,3 +1,3 @@
 ../HAL/LowPowerMode/lowPowerMode.c:11:6:startLowPowerMode	8	static
-../HAL/LowPowerMode/lowPowerMode.c:21:6:HAL_SuspendTick	4	static
-../HAL/LowPowerMode/lowPowerMode.c:26:6:HAL_ResumeTick	4	static
+../HAL/LowPowerMode/lowPowerMode.c:19:6:HAL_SuspendTick	4	static
+../HAL/LowPowerMode/lowPowerMode.c:24:6:HAL_ResumeTick	4	static

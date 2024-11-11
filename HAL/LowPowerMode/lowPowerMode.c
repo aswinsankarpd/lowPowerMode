@@ -10,11 +10,9 @@
 
 void startLowPowerMode(void)
 {
-	HAL_UART_MspDeInit(&huart3);
+    HAL_SuspendTick();
 
-	HAL_SuspendTick();
-
-	HAL_PWR_EnterSLEEPMode(PWR_MAINREGULATOR_ON, PWR_SLEEPENTRY_WFI);
+    HAL_PWR_EnterSLEEPMode(PWR_MAINREGULATOR_ON,PWR_SLEEPENTRY_WFI);
 }
 
 
