@@ -26,6 +26,16 @@ static uint8_t days_in_month(uint8_t month, uint8_t year);
 void HAL_RTC_AlarmAEventCallback(RTC_HandleTypeDef *hrtc)
 {
 	HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_0);
+
+	sDateTimeConfig_t dt = {0};
+
+	getRTCData(&dt);
+
+	add_time(&dt, 0, 0, 5);
+
+	setRTCAlarm(&dt);
+
+//	startLowPowerMode();
 }
 
 void RTCInit(void)
