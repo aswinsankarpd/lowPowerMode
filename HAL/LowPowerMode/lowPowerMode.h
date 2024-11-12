@@ -12,10 +12,12 @@
 
 void lowPowerModeTask(void);
 
-void startLowPowerMode(void);
+void startStopMode(void);
 
 void HAL_SuspendTick(void);
 
 void HAL_ResumeTick(void);
+
+void stopModeTask(void);
 
 #endif /* LOWPOWERMODE_LOWPOWERMODE_H_ */

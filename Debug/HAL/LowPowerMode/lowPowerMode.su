@@ -1,4 +1,7 @@
-../HAL/LowPowerMode/lowPowerMode.c:13:6:lowPowerModeTask	24	static
-../HAL/LowPowerMode/lowPowerMode.c:34:6:startLowPowerMode	8	static
-../HAL/LowPowerMode/lowPowerMode.c:45:6:HAL_SuspendTick	4	static
-../HAL/LowPowerMode/lowPowerMode.c:50:6:HAL_ResumeTick	4	static
+../HAL/LowPowerMode/lowPowerMode.c:15:6:lowPowerModeTask	4	static
+../HAL/LowPowerMode/lowPowerMode.c:38:6:stopModeTask	16	static
+../HAL/LowPowerMode/lowPowerMode.c:79:6:startStopMode	8	static
+../HAL/LowPowerMode/lowPowerMode.c:92:6:HAL_SuspendTick	4	static
+../HAL/LowPowerMode/lowPowerMode.c:97:6:HAL_ResumeTick	4	static
+../HAL/LowPowerMode/lowPowerMode.c:102:6:getStopModeFlag	4	static
+../HAL/LowPowerMode/lowPowerMode.c:107:6:setStopModeFlag	16	static

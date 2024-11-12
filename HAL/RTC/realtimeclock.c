@@ -25,6 +25,10 @@ static uint8_t days_in_month(uint8_t month, uint8_t year);
 
 bool rtcAlarmTriggered = false;
 
+void HAL_RTCEx_WakeUpTimerEventCallback(RTC_HandleTypeDef * hrtc)
+{
+	HAL_ResumeTick();
+}
 void HAL_RTC_AlarmAEventCallback(RTC_HandleTypeDef *hrtc)
 {
 	HAL_ResumeTick();

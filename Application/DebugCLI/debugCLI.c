@@ -22,6 +22,8 @@ static void setGreenLed(char ** args, char *response);
 
 static void setRtcAlarm(char ** args, char *response);
 
+static void setStopMode(char ** args, char *response);
+
 typedef struct
 {
     char * command;
@@ -42,6 +44,7 @@ sCommandStruct_t setCommandtable[] =
 	{"greenLed",		NULL,	setGreenLed			},
 	{"rtcAlarm",		NULL,	setRtcAlarm			},
 	{"cSleep", 			NULL, 	setCSleep			},
+	{"cStop", 			NULL, 	setStopMode			},
 //	{"cStop", 			NULL, 	setCStop		},
 //	{"dStop", 			NULL, 	setDSStop		},
 //	{"stop", 			NULL, 	setStop			},
@@ -252,11 +255,16 @@ static void setRtcAlarm(char ** args, char *response)
 
 static void setCSleep(char ** args, char *response)
 {
-    uint16_t length = snprintf(response, 512, "Device entered cSleep mode\r\n");
+//    uint16_t length = snprintf(response, 512, "Device entered cSleep mode\r\n");
 
-	HAL_UART_Transmit(&huart3, response, length, 100);
+//	HAL_UART_Transmit(&huart3, response, length, 100);
 
-	startLowPowerMode();
+//	startSleepMode();
+}
+
+static void setStopMode(char ** args, char *response)
+{
+	setStopModeFlag(true);
 }
 
 static void setGreenLed(char ** args, char *response)
