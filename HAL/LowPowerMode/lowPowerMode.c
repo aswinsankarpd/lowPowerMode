@@ -56,10 +56,6 @@ void stopModeTask(void)
 
 
 		//<<< Logic after wakeup
-		SystemClock_Config();
-
-		HAL_ResumeTick();
-
 		HAL_RTCEx_DeactivateWakeUpTimer(&hrtc);
 
 		for(uint8_t i = 0; i < 5; i++)

@@ -32,9 +32,9 @@ HAL/RTC/realtimeclock.o: ../HAL/RTC/realtimeclock.c \
  ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rtc_ex.h \
  ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h \
  ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart_ex.h \
- D:/Tismo_Projects/Experiments/LowPowerMode/lowPowerMode/Interface/commonDefines.h \
+ C:/Users/AswinSankar/Downloads/q/w/Interface/commonDefines.h \
  ../Core/Inc/usart.h \
- D:/Tismo_Projects/Experiments/LowPowerMode/lowPowerMode/HAL/LowPowerMode/lowPowerMode.h
+ C:/Users/AswinSankar/Downloads/q/w/HAL/LowPowerMode/lowPowerMode.h
 ../HAL/RTC/realtimeclock.h:
 ../Core/Inc/rtc.h:
 ../Core/Inc/main.h:
@@ -70,6 +70,6 @@ HAL/RTC/realtimeclock.o: ../HAL/RTC/realtimeclock.c \
 ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rtc_ex.h:
 ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:
 ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart_ex.h:
-D:/Tismo_Projects/Experiments/LowPowerMode/lowPowerMode/Interface/commonDefines.h:
+C:/Users/AswinSankar/Downloads/q/w/Interface/commonDefines.h:
 ../Core/Inc/usart.h:
-D:/Tismo_Projects/Experiments/LowPowerMode/lowPowerMode/HAL/LowPowerMode/lowPowerMode.h:
+C:/Users/AswinSankar/Downloads/q/w/HAL/LowPowerMode/lowPowerMode.h:

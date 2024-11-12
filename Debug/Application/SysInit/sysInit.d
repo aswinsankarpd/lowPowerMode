@@ -1,6 +1,6 @@
 Application/SysInit/sysInit.o: ../Application/SysInit/sysInit.c \
  ../Application/SysInit/sysInit.h \
- D:/Tismo_Projects/Experiments/LowPowerMode/lowPowerMode/Interface/commonDefines.h \
+ C:/Users/AswinSankar/Downloads/q/w/Interface/commonDefines.h \
  ../Core/Inc/usart.h ../Core/Inc/main.h \
  ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h \
  ../Core/Inc/stm32h7xx_hal_conf.h \
@@ -34,10 +34,10 @@ Application/SysInit/sysInit.o: ../Application/SysInit/sysInit.c \
  ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rtc_ex.h \
  ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h \
  ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart_ex.h \
- D:/Tismo_Projects/Experiments/LowPowerMode/lowPowerMode/Interface/DebugUart/debugUart.h \
- D:/Tismo_Projects/Experiments/LowPowerMode/lowPowerMode/Interface/circularBuffer/circularBuffer.h
+ C:/Users/AswinSankar/Downloads/q/w/Interface/DebugUart/debugUart.h \
+ C:/Users/AswinSankar/Downloads/q/w/Interface/circularBuffer/circularBuffer.h
 ../Application/SysInit/sysInit.h:
-D:/Tismo_Projects/Experiments/LowPowerMode/lowPowerMode/Interface/commonDefines.h:
+C:/Users/AswinSankar/Downloads/q/w/Interface/commonDefines.h:
 ../Core/Inc/usart.h:
 ../Core/Inc/main.h:
 ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:
@@ -72,5 +72,5 @@ D:/Tismo_Projects/Experiments/LowPowerMode/lowPowerMode/Interface/commonDefines.
 ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rtc_ex.h:
 ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:
 ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart_ex.h:
-D:/Tismo_Projects/Experiments/LowPowerMode/lowPowerMode/Interface/DebugUart/debugUart.h:
-D:/Tismo_Projects/Experiments/LowPowerMode/lowPowerMode/Interface/circularBuffer/circularBuffer.h:
+C:/Users/AswinSankar/Downloads/q/w/Interface/DebugUart/debugUart.h:
+C:/Users/AswinSankar/Downloads/q/w/Interface/circularBuffer/circularBuffer.h:

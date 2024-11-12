@@ -1,6 +1,6 @@
 Interface/circularBuffer/circularBuffer.o: \
  ../Interface/circularBuffer/circularBuffer.c \
  ../Interface/circularBuffer/circularBuffer.h \
- D:/Tismo_Projects/Experiments/LowPowerMode/lowPowerMode/Interface/commonDefines.h
+ C:/Users/AswinSankar/Downloads/q/w/Interface/commonDefines.h
 ../Interface/circularBuffer/circularBuffer.h:
-D:/Tismo_Projects/Experiments/LowPowerMode/lowPowerMode/Interface/commonDefines.h:
+C:/Users/AswinSankar/Downloads/q/w/Interface/commonDefines.h:

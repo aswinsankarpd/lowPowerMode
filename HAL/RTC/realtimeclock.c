@@ -27,8 +27,11 @@ bool rtcAlarmTriggered = false;
 
 void HAL_RTCEx_WakeUpTimerEventCallback(RTC_HandleTypeDef * hrtc)
 {
+	SystemClock_Config();
+
 	HAL_ResumeTick();
 }
+
 void HAL_RTC_AlarmAEventCallback(RTC_HandleTypeDef *hrtc)
 {
 	HAL_ResumeTick();
