@@ -255,11 +255,11 @@ static void setRtcAlarm(char ** args, char *response)
 
 static void setCSleep(char ** args, char *response)
 {
-//    uint16_t length = snprintf(response, 512, "Device entered cSleep mode\r\n");
+    uint16_t length = snprintf(response, 512, "Device entered cSleep mode\r\n");
 
-//	HAL_UART_Transmit(&huart3, response, length, 100);
+	HAL_UART_Transmit(&huart3, response, length, 100);
 
-//	startSleepMode();
+	startSleepMode();
 }
 
 static void setStopMode(char ** args, char *response)

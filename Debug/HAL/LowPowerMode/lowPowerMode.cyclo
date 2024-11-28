@@ -1,7 +1,8 @@
 ../HAL/LowPowerMode/lowPowerMode.c:15:6:lowPowerModeTask	1
-../HAL/LowPowerMode/lowPowerMode.c:38:6:stopModeTask	4
-../HAL/LowPowerMode/lowPowerMode.c:75:6:startStopMode	2
-../HAL/LowPowerMode/lowPowerMode.c:88:6:HAL_SuspendTick	1
-../HAL/LowPowerMode/lowPowerMode.c:93:6:HAL_ResumeTick	1
-../HAL/LowPowerMode/lowPowerMode.c:98:6:getStopModeFlag	1
-../HAL/LowPowerMode/lowPowerMode.c:103:6:setStopModeFlag	1
+../HAL/LowPowerMode/lowPowerMode.c:21:6:stopModeTask	3
+../HAL/LowPowerMode/lowPowerMode.c:51:6:startSleepMode	1
+../HAL/LowPowerMode/lowPowerMode.c:60:6:startStopMode	2
+../HAL/LowPowerMode/lowPowerMode.c:73:6:HAL_SuspendTick	1
+../HAL/LowPowerMode/lowPowerMode.c:78:6:HAL_ResumeTick	1
+../HAL/LowPowerMode/lowPowerMode.c:83:6:getStopModeFlag	1
+../HAL/LowPowerMode/lowPowerMode.c:88:6:setStopModeFlag	1

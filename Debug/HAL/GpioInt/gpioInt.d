@@ -32,9 +32,9 @@ HAL/GpioInt/gpioInt.o: ../HAL/GpioInt/gpioInt.c ../HAL/GpioInt/gpioInt.h \
  ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rtc_ex.h \
  ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h \
  ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart_ex.h \
- C:/Users/AswinSankar/Downloads/q/w/HAL/UART/uart.h ../Core/Inc/usart.h \
- ../Core/Inc/dma.h \
- C:/Users/AswinSankar/Downloads/q/w/Interface/commonDefines.h
+ D:/Tismo_Projects/Experiments/LowPowerMode/lowPowerMode/HAL/UART/uart.h \
+ ../Core/Inc/usart.h ../Core/Inc/dma.h \
+ D:/Tismo_Projects/Experiments/LowPowerMode/lowPowerMode/Interface/commonDefines.h
 ../HAL/GpioInt/gpioInt.h:
 ../Core/Inc/gpio.h:
 ../Core/Inc/main.h:
@@ -70,7 +70,7 @@ HAL/GpioInt/gpioInt.o: ../HAL/GpioInt/gpioInt.c ../HAL/GpioInt/gpioInt.h \
 ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rtc_ex.h:
 ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:
 ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart_ex.h:
-C:/Users/AswinSankar/Downloads/q/w/HAL/UART/uart.h:
+D:/Tismo_Projects/Experiments/LowPowerMode/lowPowerMode/HAL/UART/uart.h:
 ../Core/Inc/usart.h:
 ../Core/Inc/dma.h:
-C:/Users/AswinSankar/Downloads/q/w/Interface/commonDefines.h:
+D:/Tismo_Projects/Experiments/LowPowerMode/lowPowerMode/Interface/commonDefines.h:

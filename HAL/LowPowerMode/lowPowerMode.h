@@ -20,4 +20,6 @@ void HAL_ResumeTick(void);
 
 void stopModeTask(void);
 
+void startSleepMode(void);
+
 #endif /* LOWPOWERMODE_LOWPOWERMODE_H_ */

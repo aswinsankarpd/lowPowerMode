@@ -30,6 +30,8 @@ void HAL_RTCEx_WakeUpTimerEventCallback(RTC_HandleTypeDef * hrtc)
 	SystemClock_Config();
 
 	HAL_ResumeTick();
+
+	HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_1);
 }
 
 void HAL_RTC_AlarmAEventCallback(RTC_HandleTypeDef *hrtc)
@@ -48,6 +50,7 @@ void RTCInit(void)
 		setRTCData(&defaultDateTime);
 		HAL_UART_Transmit(&huart3, "RTC Reconfig'd\r\n", 13, 100);
 	}
+	HAL_RTCEx_DeactivateWakeUpTimer(&hrtc);
 }
 
 void setRTCData(sDateTimeConfig_t * rtcDatTime)

@@ -68,8 +68,8 @@ all: main-build
 main-build: lowpowermode.elf secondary-outputs
 
 # Tool invocations
-lowpowermode.elf lowpowermode.map: $(OBJS) $(USER_OBJS) C:\Users\AswinSankar\Downloads\q\w\STM32H723ZGTX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "lowpowermode.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m7 -T"C:\Users\AswinSankar\Downloads\q\w\STM32H723ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="lowpowermode.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+lowpowermode.elf lowpowermode.map: $(OBJS) $(USER_OBJS) D:\Tismo_Projects\Experiments\LowPowerMode\lowPowerMode\STM32H723ZGTX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "lowpowermode.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m7 -T"D:\Tismo_Projects\Experiments\LowPowerMode\lowPowerMode\STM32H723ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="lowpowermode.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
