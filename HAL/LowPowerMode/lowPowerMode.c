@@ -24,26 +24,18 @@ void stopModeTask(void)
 	{
 		stopModeTriggered = false;
 
-		if (HAL_RTCEx_SetWakeUpTimer_IT(&hrtc, 0x500B, RTC_WAKEUPCLOCK_RTCCLK_DIV16) != HAL_OK)
-		{
-			Error_Handler();
-		}
+//		if (HAL_RTCEx_SetWakeUpTimer_IT(&hrtc, 0x500B, RTC_WAKEUPCLOCK_RTCCLK_DIV16) != HAL_OK)
+//		{
+//			Error_Handler();
+//		}
 
 	    uint16_t length = snprintf(res, 512, "Stop Mode Triggered \r\n");
 
+	    HAL_PWR_EnableWakeUpPin(PWR_WAKEUP_PIN4);
 
 		HAL_UART_Transmit(&huart3, res, length, 100);
 
 		HAL_PWR_EnterSTANDBYMode();
-
-		//<<< Logic after wakeup
-		HAL_RTCEx_DeactivateWakeUpTimer(&hrtc);
-
-		HAL_PWR_EnablePVD();
-
-	    length = snprintf(res, 512, "System woken up \r\n");
-
-		HAL_UART_Transmit(&huart3, res, length, 100);
 
 	}
 }

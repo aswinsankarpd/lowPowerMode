@@ -22,4 +22,6 @@ void systemInit(void)
 	HAL_GPIO_WritePin (GPIOB, GPIO_PIN_0, 1);
 
 	HAL_UART_Transmit_IT(&huart3, "System Started\r\n", 16);
+
+	HAL_PWR_DisableWakeUpPin(PWR_WAKEUP_PIN4);
 }
