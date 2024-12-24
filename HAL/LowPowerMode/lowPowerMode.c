@@ -10,7 +10,7 @@
 
 char res[100] = {0};
 
-static bool stopModeTriggered = false;
+static bool standbyModeTriggd = false;
 
 void lowPowerModeTask(void)
 {
@@ -18,11 +18,11 @@ void lowPowerModeTask(void)
 }
 
 
-void stopModeTask(void)
+void standbyModeTask(void)
 {
-	if(stopModeTriggered == true)
+	if(standbyModeTriggd == true)
 	{
-		stopModeTriggered = false;
+		standbyModeTriggd = false;
 
 //		if (HAL_RTCEx_SetWakeUpTimer_IT(&hrtc, 0x500B, RTC_WAKEUPCLOCK_RTCCLK_DIV16) != HAL_OK)
 //		{
@@ -72,12 +72,12 @@ void HAL_ResumeTick(void)
   SysTick->CTRL  |= SysTick_CTRL_TICKINT_Msk;
 }
 
-bool getStopModeFlag(void)
+bool getStndMode(void)
 {
-	return stopModeTriggered;
+	return standbyModeTriggd;
 }
 
-void setStopModeFlag(bool flag)
+void setStndMode(bool flag)
 {
-	stopModeTriggered = flag;
+	standbyModeTriggd = flag;
 }

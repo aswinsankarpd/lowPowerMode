@@ -24,6 +24,8 @@ static void setRtcAlarm(char ** args, char *response);
 
 static void setStopMode(char ** args, char *response);
 
+static void setStandby(char ** args, char *response);
+
 typedef struct
 {
     char * command;
@@ -49,7 +51,7 @@ sCommandStruct_t setCommandtable[] =
 //	{"dStop", 			NULL, 	setDSStop		},
 //	{"stop", 			NULL, 	setStop			},
 //	{"dStandby", 		NULL, 	setDStandby		},
-//	{"standby", 		NULL, 	setStandby		},
+	{"standby", 		NULL, 	setStandby		},
 
     {NULL, 				NULL, 	NULL			}
 };
@@ -264,7 +266,12 @@ static void setCSleep(char ** args, char *response)
 
 static void setStopMode(char ** args, char *response)
 {
-	setStopModeFlag(true);
+	startStopMode();
+}
+
+static void setStandby(char ** args, char *response)
+{
+	setStndMode(true);
 }
 
 static void setGreenLed(char ** args, char *response)

@@ -1,0 +1,8 @@
+../Application/DebugCLI/debugCLI.c:160:13:getDateTime	1
+../Application/DebugCLI/debugCLI.c:275:13:setStandby	1
+../Application/DebugCLI/debugCLI.c:267:13:setStopMode	1
+../Application/DebugCLI/debugCLI.c:258:13:setCSleep	1
+../Application/DebugCLI/debugCLI.c:215:13:setRtcAlarm	4
+../Application/DebugCLI/debugCLI.c:171:13:setDateTime	4
+../Application/DebugCLI/debugCLI.c:280:13:setGreenLed	3
+../Application/DebugCLI/debugCLI.c:73:6:debugCLITask	9

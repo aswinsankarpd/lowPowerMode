@@ -1,0 +1,4 @@
+../HAL/UART/uart.c:14:6:HAL_UART_RxCpltCallback	0	static
+../HAL/UART/uart.c:21:6:HAL_UART_TxCpltCallback	0	static
+../HAL/UART/uart.c:26:6:uartInit	0	static
+../HAL/UART/uart.c:31:6:receptionItrOn	0	static

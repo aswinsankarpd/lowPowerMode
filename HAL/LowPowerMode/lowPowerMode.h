@@ -18,7 +18,7 @@ void HAL_SuspendTick(void);
 
 void HAL_ResumeTick(void);
 
-void stopModeTask(void);
+void standbyModeTask(void);
 
 void startSleepMode(void);
 

@@ -108,7 +108,7 @@ int main(void)
     /* USER CODE BEGIN 3 */
 	  debugCLITask();
 
-	  stopModeTask();
+	  standbyModeTask();
   }
   /* USER CODE END 3 */
 }

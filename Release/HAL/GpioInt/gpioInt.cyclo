@@ -1,0 +1,2 @@
+../HAL/GpioInt/gpioInt.c:21:6:HAL_GPIO_EXTI_Callback	1
+../HAL/GpioInt/gpioInt.c:31:6:MX_GPIO_UnInit	1
