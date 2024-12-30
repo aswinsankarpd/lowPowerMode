@@ -35,11 +35,15 @@ void standbyModeTask(void)
 
 		HAL_UART_Transmit(&huart3, res, length, 100);
 
+		HAL_PWR_DisableBkUpAccess();
+
 		MX_GPIO_DeInit();
 
 		MAX_DMA_DeInit();
 
 		HAL_UART_MspDeInit(&huart3);
+
+		HAL_DeInit();
 
 		HAL_PWR_EnterSTANDBYMode();
 
