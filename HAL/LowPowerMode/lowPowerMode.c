@@ -37,6 +37,10 @@ void standbyModeTask(void)
 
 		MX_GPIO_DeInit();
 
+		MAX_DMA_DeInit();
+
+		HAL_UART_MspDeInit(&huart3);
+
 		HAL_PWR_EnterSTANDBYMode();
 
 	}
