@@ -50,6 +50,11 @@ void MX_DMA_Init(void)
 }
 
 /* USER CODE BEGIN 2 */
+void MAX_DMA_DeInit(void)
+{
+  __HAL_RCC_DMA1_CLK_DISABLE();
 
+  HAL_NVIC_DisableIRQ(DMA1_Stream0_IRQn);
+}
 /* USER CODE END 2 */
 

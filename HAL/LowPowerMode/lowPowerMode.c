@@ -35,6 +35,8 @@ void standbyModeTask(void)
 
 		HAL_UART_Transmit(&huart3, res, length, 100);
 
+		MX_GPIO_DeInit();
+
 		HAL_PWR_EnterSTANDBYMode();
 
 	}
